@@ -1,5 +1,3 @@
-"use client";
-
 import type {PostProps} from "./listitem";
 
 import {usePathname} from "next/navigation";

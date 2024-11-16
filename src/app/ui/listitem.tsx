@@ -1,5 +1,3 @@
-import List from "./list";
-
 export interface PostProps {
   by: string;
   descendants: number;
@@ -9,14 +7,6 @@ export interface PostProps {
   title: string;
   type: string;
   url?: string;
-}
-
-export async function ListItem({id}: {id: number}) {
-  const post = await fetch(
-    `https://hacker-news.firebaseio.com/v0/item/${id}.json?print=pretty`,
-  ).then((resp) => resp.json() as Promise<PostProps>);
-
-  return <List post={post} />;
 }
 
 export function ListItemLoading() {
