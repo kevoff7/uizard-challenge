@@ -33,7 +33,7 @@ function RootLayout({
             Random
           </button>
           <h1 className="flex-1 text-center text-xl">
-            <Link href="/">Uizard Random Hacerknews Reader</Link>
+            <Link href="/">Uizard Random Hackernews Reader</Link>
           </h1>
         </header>
         <main className="grid grid-cols-[320px,1fr] overflow-hidden">
